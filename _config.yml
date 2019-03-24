@@ -12,9 +12,11 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.lianghuaquan.com:4000
-root: /
-permalink: :year/:month/:day/:title/
+#url: http://www.lianghuaquan.com:4000
+url: http://www.lianghuaquan.com/blog
+root: /blog/
+#permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory
@@ -79,5 +81,11 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/bjrobin/bjrobin.github.io.git
+
+  #repo: https://github.com/bjrobin/blog.git
+  #branch: gh-pages
+
+  #repo: https://github.com/bjrobin/bjrobin.github.io.git
+  
+  repo: blog@182.92.232.130:/usr/local/lianghuaquan/git/blog.git
   branch: master
